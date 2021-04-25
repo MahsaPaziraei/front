@@ -1,0 +1,39 @@
+<div class="card">
+  <div class="card-header">
+    add new property
+  </div>
+    <form (ngSubmit)="onSubmit()" #Form="ngForm">
+      <div class="form-group col-12">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" ngModel name="Name" #name="ngModel" required minlength="5">
+    <span *ngIf="!name.valid && name.touched" class="error-block">
+      <span *ngIf="name.hasError('required')">
+         Please provide valid name
+      </span>
+      <span *ngIf="name.hasError('minlength')">
+        min 5 char
+      </span>
+    </span>
+      </div>
+
+      <div class="form-group col-12">
+        <label for="type">Type</label>
+        <input type="text" class="form-control" ngModel name="Type" required>
+      </div>
+
+      <div class="form-group col-12">
+        <label for="price">Price</label>
+        <input type="text" class="form-control" ngModel name="Price" required>
+      </div>
+
+      <div class="form-group col-12">
+      <button type="submit" class="btn btn-primary mr-2">save</button>
+      <button type="reset" class="btn btn-primary">cancel</button>
+      </div>
+
+    </form>
+  </div>
+
+
+
+<button (click)="onBack()" class="btn btn-primary">Back</button>

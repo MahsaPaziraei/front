@@ -1,0 +1,64 @@
+ [
+
+  {
+    "id":1,
+    "name":"Birla House",
+    "saleRent":0,
+    "type":"House",
+    "price":12000,
+    "img":"img1"
+  },
+
+  {
+    "id":2,
+    "saleRent":1,
+    "name":"Birla House",
+    "type":"House",
+    "price":13000,
+    "img":"img2"
+  },
+
+  {
+    "id":3,
+    "saleRent":1,
+    "name":"Birla House",
+    "type":"House",
+    "price":14000,
+    "img":"img3"
+
+  },
+
+  {
+    "id":4,
+    "saleRent":1,
+    "name":"Birla House",
+    "type":"House",
+    "price":15000,
+    "img":"img4"
+  },
+
+  {
+    "id":5,
+    "saleRent":0,
+    "name":"Birla House",
+    "type":"House",
+    "price":16000,
+    "img":"img5"
+  },
+
+  {
+    "id":6,
+    "saleRent":0,
+    "name":"Birla House",
+    "type":"House",
+    "price":18000
+  },
+
+  {
+    "id":7,
+    "saleRent":1,
+    "name":"Birla House",
+    "type":"House",
+    "price":17000
+  }
+]

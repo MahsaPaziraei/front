@@ -1,0 +1,21 @@
+
+  <div class="card">
+    <div class="card-img-wrapper">
+      <img *ngIf="property.img;else default"  src="assets/img/{{property.img}}.jpg" alt="">
+<ng-template #default><img  class="card-img-top" src="assets/img/house.png" alt=""></ng-template>
+    <ul class="list-inline text-center member-icons animate">
+      <li class="list-inline-item">
+        <button class="btn-primary" routerLink="/property-detail/{{property.id}}">edit</button>
+      </li>
+      <li class="list-inline-item">
+        <button class="btn-primary">contact</button>
+      </li>
+    </ul> </div>
+    <div class="card-body p-2">
+      <h1>{{property.name}}</h1>
+      <h2>{{property.type}}</h2>
+      <h3>{{property.price}}</h3>
+    </div>
+  </div>
+
+
